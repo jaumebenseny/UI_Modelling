@@ -1,0 +1,16 @@
+Design Optimization with Random Search
+-----------------------------------------
+
+In order to address non-trivial design decisions, inicial interface design is extended to explore a larger space by random search. Variables defining the basic interface design (based on customer's requirements and available in Benseny_sketches.pdf document) are discretized in order to make the space of feasible size.
+
+Discrete Variables to be optimized
+• Total number of categories and their height relative to screen size
+• Number of subcategories / category their width relative to screen size
+• Scrolling
+• Item height (zoom in / amplification?)
+
+An evaluation function is coded to predict how each design scores against interface requirements. The following models are applied:
+- KLM to estimate execution time of main user tasks (to be minimized)
+- SDP to optimize layout design based on design decisions (evolve design)
+
+

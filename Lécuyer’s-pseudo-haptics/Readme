@@ -1,0 +1,6 @@
+Lécuyer’s pseudo-haptics
+--------------------------
+
+The simulation of pseudo-haptic textures relies on a modification of the motion (speed) of the manipulated mouse cursor.
+In this particular implementation, when the user tries to move the cursor over an inverted bump, he/she feels that more effort is required along the decreasig slope of the bump. The algorithm implements a cost function in which pixels are accumulated/decreased in the buffer until for instance, there are enough to climb to the next level.
+
